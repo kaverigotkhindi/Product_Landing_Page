@@ -92,8 +92,12 @@ main h1{
       margin-bottom: 0.5rem;
     }
    main{
-    margin-left: 3rem;
-    margin-bottom: 3rem;
+    margin: 0.5rem;
+    
+    
+   }
+   main h1{
+    padding: 1rem;
    }
    
 }
