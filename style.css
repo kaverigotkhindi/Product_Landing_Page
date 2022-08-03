@@ -31,7 +31,7 @@ header:after{
     justify-content: space-between;
     align-items: center;
     width: 30rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     
 }
 .nav div:hover{
@@ -56,4 +56,23 @@ main{
 }
 main h1{
     font-weight: 900;
+}
+
+@media all and (max-width : 600px){
+    header{
+        width:100vw ;
+        height: 100vh;
+        /* background-color: rgb(0, 255, 0); */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+   
+    .nav{
+        flex-direction: column;
+       
+    }
+    .nav div{
+        margin: 1rem;
+    }
 }
