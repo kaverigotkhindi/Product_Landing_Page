@@ -4,9 +4,10 @@ body{
     box-sizing: border-box;
     /* border:1px solid black; */
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
 }
 .green-bar{
-    /* display: none; */
+    display: none;
     
 }
 .logo{
@@ -63,7 +64,7 @@ main h1{
     .green-bar{
     display: block;
     background-color: rgb(0, 255, 0);
-    height: 5rem;
+    height: 8.2rem;
     width: 100%;
     /* margin-top: 0; */
     }
@@ -88,9 +89,11 @@ main h1{
     }
     header button{
       margin-top: 1rem;
+      margin-bottom: 0.5rem;
     }
    main{
     margin-left: 3rem;
+    margin-bottom: 3rem;
    }
    
 }
