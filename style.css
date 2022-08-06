@@ -1,103 +1,106 @@
-body{
+*{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    /* border:1px solid black; */
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
-}
-.green-bar{
-    display: none;
-    
-}
-.logo{
-    color: rgb(0, 255, 0);
-    font-weight: 900;
-    font-size: 2rem;
-    
-}
-.logo,.nav div,button{
-    cursor: pointer;
-}
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    border-bottom: 1px solid rgb(231, 225, 225);
-   /* background-color: rgb(230, 175, 93); */
-   padding: 0 1.5rem;
 }
 
-.nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 30rem;
-    font-size: 1rem;
-    
-}
-.nav div:hover{
-   color: rgb(0, 255, 0);
-}
-.nav div{
-margin-left: 1rem;
-}
-button{
-    background-color:rgb(0, 255, 0);
-    border: none;
-    border-radius: 5px;
-    padding: 5px;
-    color: rgb(253, 253, 253);
-    font-weight: 700;
-    font-family:  Cochin, Georgia, Times, 'Times New Roman', serif;
-    cursor: pointer;
-} 
 main{
-    margin-left: 16rem ;
-    margin-top: 3rem;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0,0,0.6)), url("keyboard.jpg")  ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    color: rgb(254, 254, 254);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    height: 85vh;
+    
+    display: flex;
+    flex-direction: row;
+    
+
+}.desc{
+padding:2rem 10rem;
+
 }
-main h1{
-    font-weight: 900;
+.desc>h1{
+    font-size: 3rem;
+}
+.desc > *{
+    margin-top: 2rem;
 }
 
-@media all and (max-width : 600px){
-    .green-bar{
-    display: block;
-    background-color: rgb(0, 255, 0);
-    height: 8.2rem;
-    width: 100%;
-    margin-top: 0;
-    }
-    header{
-        width:100% ;
-        height: 100vh;
-        /* background-color: rgb(0, 255, 0); */
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        overflow-x: hidden;
-       
-        
-    }
-       
-    .nav {
-        flex-direction: column;
-        margin: 0;
-    }
-    .nav div{
-        margin: 1rem;
-    }
-    header button{
-      margin-top: 1rem;
-      margin-bottom: 0.5rem;
-    }
-   main{
-    margin: 0.5rem;
+.buy-now{
+    background-color: rgb(231, 74, 74);
+    color: rgb(255, 255, 255);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    width: 6rem;
+    border: none;
+    font-weight: 700;
+}
+.buy-now:hover{
+    background-color: rgb(255, 255, 255);
+    color:  rgb(231, 74, 74);
+}
+.demos{
+    background-color: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    width: 6rem;
+}
+.demos:hover{
+   color: rgb(255, 255, 255);
+   background-color:  rgb(231, 74, 74);
+}
+
+.buy-now,.demos{
+    cursor: pointer;
+}
+.social-media{
+    height: 8rem;
+    width: 2.5rem;
+    background-color:  rgb(231, 74, 74);
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+    justify-content: space-evenly;
+    position: fixed;
+    margin-top: 7rem;
+    margin-left: 3rem;
+}
+.social-media>*{
+    font-size: 1.5rem;
+    cursor: pointer;
+    /* margin: 0.8rem; */
+}
+.demo-section{
+
+margin-top: 2rem;
+background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0,0,0.6)) ,url("person_website.jpg") ;
+
+}
+.demo-section > h1{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    margin-left:40%;
+    text-decoration: underline;
+    text-decoration-color:rgb(255, 0, 0);
+    text-underline-offset: 0.5rem;
+    color: rgb(240, 227, 227);
+}
+
+
+.demo-section .templates{
+    margin-top: 2rem;
     
-    
-   }
-   main h1{
-    padding: 1rem;
-   }
-   
+
+}
+.templates img{
+    margin-left: 5rem;
+    box-shadow: 0 0 5px rgb(92, 89, 89);
+    cursor: pointer;
+}
+img:hover{
+background-image: linear-gradient(rgb(0, 0, 0,0.8),rgb(0, 0, 0,0.5)),url("template1.png");
 }
