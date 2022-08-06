@@ -89,18 +89,44 @@ background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0,0,0,0.6)) ,url("perso
     text-underline-offset: 0.5rem;
     color: rgb(240, 227, 227);
 }
-
+.template-wrapper{
+    display: flex;
+}
 
 .demo-section .templates{
     margin-top: 2rem;
     
 
 }
+.templates{
+    position: relative;
+    /* background-color: blue; */
+    width: 30rem ;
+    height: 20rem;
+    margin-left: 7rem;
+}
 .templates img{
-    margin-left: 5rem;
+    /* margin-left: 5rem; */
     box-shadow: 0 0 5px rgb(92, 89, 89);
     cursor: pointer;
+    transition: 0.5s ease;
 }
-img:hover{
-background-image: linear-gradient(rgb(0, 0, 0,0.8),rgb(0, 0, 0,0.5)),url("template1.png");
+
+.text{
+    
+    color:rgb(249, 245, 245);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    position: absolute;
+    top : 50%;
+    left: 40%;
+    font-weight:bolder;
+    opacity: 0;
 }
+
+ .templates:hover img{
+    opacity: 0.1;
+}
+.templates:hover .text{
+opacity: 1;
+}
+
